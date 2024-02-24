@@ -1,14 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TaoShuai</title>
+
+    <title>Taoshuai</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+Kuaile&display=auto"> -->
 </head>
 <body>
-    <p>
-        hello world!
-    </p>
+    <div class="container">
+        <div class="profile">
+            <div class="bio">
+                <h1>陶帅</h1>
+                <p>有本地生活服务和电商平台产品运营经验，兼具运营和产品视角，能从业务运营角度给出产品解决方案，期待在零售、电商领域长期深耕发展。</p>
+                <div class="contact-info">
+                    <ul>
+                        <li>24岁</li>
+                        <li>深圳</li>
+                        <li>2.5年经验</li>
+                        <li>+86 159-5659-1587</li>
+                        <li>shuai_tao@outlook.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="/images/my-photo.jpg" alt="陶帅的照片">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience-title">
+                <h2>工作经历</h2>
+                <hr>
+            </div>
+            <div class="experience-detail">
+                <div class="company">
+                    <h3>深圳云摩科技有限公司</h3>
+                    <p>2023.05-至今</p>
+                </div>
+                <div class="job">
+                    <p style="font-size: 16px; color: #292929;"><strong>产品经理</strong></p>
+                </div>
+                <div class="desp">
+                    <ul>
+                        <li><strong>商品迭代：</strong>利用 AI 能力提升商品数据质量，重构商品类目、属性、标签、尺码表系统，完善商品元数据。推动业务转向精品独立站，应用层站外提升投放漏斗加购率 50%，站内提升推荐效率。</li>
+                        <li><strong>商品定价：</strong>重构商品计价、比价模块，精细化商品成本、利润计算，确保黑五大促期间 交付物流成本/GMV 稳定在 30%，实现大促期间 GMV 增长同时净利率同比增长 70%。</li>
+                        <li><strong>系统迭代：</strong>推进商品数据系统持续从 1.0 向 2.0 版本演进，降低 C 端业务对商品系统依赖，提升 C 端业务稳定性，协同运维提升 SLA 至 99.9%。</li>
+                        <li><strong>产品增收：</strong>搭建 App 导购链路，将加购率从 30% 提升至 50%；支付成功率从 60% 提升至 85%，最终 PNL 提升20%，财务跑正。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-detail">
+                <div class="company">
+                    <h3>苏宁易购集团股份有限公司</h3>
+                    <p>2021.08-2023.05</p>
+                </div>
+                <div class="job">
+                    <p style="font-size: 16px; color: #292929;"><strong>产品经理</strong></p>
+                </div>
+                <div class="desp">
+                    <ul>
+                        <li><strong>前端产品：</strong>负责微信小程序前端产品，设计线上营销活动提升访问-支付转化 1%、拓展线下交易场景，2022 年度财务口径交易额 3000 万，利润率 20%</li>
+                        <li><strong>营销活动：</strong>基于集团开发资源整合同质化产品，设计 C 端线上场景营促销（抢购、拼购）产品，活动产品化服务业务周期性惯性营销，活动营收 Q2、Q3半年度连续增长，月均增幅超 15%。</li>
+                        <li><strong>凭他商业化：</strong>融合集团线下门店项目，设计服务商品在集团加盟店业态和外部 BD 拓展分销商的移动端分销路径，抽象服务采销供应链系统，为业务带来 20% 增量 GMV。</li>
+                        <li><strong>数据分析：</strong>基于微信数据体系建设平台用户画像，协同内部数据产品建设报表，构建运营数据分析和财务经营数据分析体系，辅助运营进行 RFM 分析提升复购率 10%，降低退货率减亏 400 万。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience-title">
+                <h2>项目经历</h2>
+                <hr>
+            </div>
+            <div class="experience-detail">
+                <div class="company">
+                    <p style="color: #292929;"><strong>2023.09-至今</strong></p>
+                    <h3>商品数据质量提升</h3>
+                    <p style="color: #292929;"><strong>负责人</strong></p>
+                </div>
+                <div>
+                    <p>已知：商品系统定位是数据系统，架构设计分为采集->加工两层。商品信息 100% 依靠采集供给端和需求端商品获得。随着业务由<strong>「卖货」转向「卖好货」</strong>，商品系统的目标需要从<strong>「保供」转向「保质」</strong>，要求提升前端商品库商品数据质量。</p>
+                </div>
+                <div class="desp">
+                    <ul>
+                        <li>优化选品源头，优选 1688 严选商品，并协同履约团队增加 SCM 商家建品、供货流程，提升源头商品数据质量，出单商品中“好品”占比提升至 50%。</li>
+                        <li>建立商品类目、属性管理系统，完善标签系统。实现多货源平台（1688、Amazon、AE等）商品信息到自营类目树、属性的映射，完善商品数据模型，帮助解决同品/相似品比价、尺码表、商品搜索、推荐排序等问题，提升站外投放漏斗加购率 50%，站内推荐效率。</li>
+                        <li>抽象业务流程构建知识库，利用大模型优化/mock 商品标题、描述、评价卖点信息，实现人工对 AI 生成信息的干预率低于 10%</li>
+                        <li>基于 AIGC 生成商品信息基础上，对标行业头部（Selfridge、Halara、Shein）抽象商详组件生成详情，提升商详页导购效率，实验桶用户加购率提升 3%。</li>
+                        <li>针对主营服装类目商品设计图片处理工具，提供图片清晰度提升、抠图、换底等工具，统一全站商品视觉调性并支持在大促节点快速调整全站商品氛围。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-detail">
+                <div class="company">
+                    <p style="color: #292929;"><strong>2022.08 - 2023.05</strong></p>
+                    <h3>家电百科内容营销</h3>
+                    <p style="color: #292929;"><strong>发起人</strong></p>
+                </div>
+                <div>
+                    <p>已知：主营家电安维、清洗及家政保洁等生活服务属于低价低频交易，易购前台大家电销量下滑和上游厂家授权减少导致随单安装下滑。子公司业务线需要自拓用户、订单增长实现完全自收自支，自负盈亏。</p>
+                </div>
+                <div class="desp">
+                    <ul>
+                        <li>跟随安装工人上门服务，同时开展暗访，调研了解一线作业及飞单场景和用户潜在需求。</li>
+                        <li>设计以小程序为流量入口，公众号为内容载体，企业微信、视频号为触点，改造原小程序信息架构，增加内容、场景购版块，以“服务管家”形式培育用户品牌服务意识，提升用户 90 天复购率 10%，减少飞单退货实现减亏 400 万。</li>
+                        <li>协同运营、市场标准化内容获取、生产加工流程，并将企业微信等内容入口植入履约、评价流程，实现公众号获客->留存闭环，期末公众号用户用户体量增加至 400 万，仅次于集团苏宁易购公众号。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-detail">
+                <div class="company">
+                    <p style="color: #292929;"><strong>2022.04 - 2022.08</strong></p>
+                    <h3>服务采销供应链</h3>
+                    <p style="color: #292929;"><strong>负责人</strong></p>
+                </div>
+                <div>
+                    <p>已知：线下代理分销商在全国 36 个大区分布广度加大，运营管理难度指数级提升。需要在调动代理人积极性同时确保 GMV 和利润稳定，同时将财税流程系统化以降低内控风险。</p>
+                </div>
+                <div class="desp">
+                    <ul>
+                        <li>将入驻流程扩展至 C 端，实现代理人便捷入驻，快速完成个人信息填写、分佣订单、佣金及税务查看管理，提升代理人操作体验及效率，拓展集团 10000 家零售云门店，全国 300 人社区代理分销商。</li>
+                        <li>将价格渠道下沉至代理人维度，实现一店一价，以适应社区服务定价，保证销售服务的价格力。设计分销价格管控，根据预设加价比例计算促销价抽成扣点后利润率以及与官方渠道售价差异，确保利润稳定以及品牌全渠道价格稳定。</li>
+                        <li>协同财务结算完成订单正逆向入账对账，自动化佣金发放、报税等合规问题。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience-title">
+                <h2>教育背景</h2>
+                <hr>
+            </div>
+            <div id="education" class="experience-detail">
+                <div class="company">
+                    <h3>安徽财经大学</h3>
+                    <p style="color: #292929;"><strong>2017.09-2021.07</strong></p>
+                </div>
+                <div class="job">
+                    <p style="color: #292929;"><strong>电子商务（统招全日制本科）</strong></p>
+                </div>
+            </div>
+        <div id="plan" class="experience">
+            <div class="experience-title">
+                <h2>职业规划</h2>
+                <hr>
+            </div>
+            <div class="experience-detail">
+                    <p>在校期间自主创业实现年现金流净利 2 万；校招管培生进入苏宁，在零售业态培育生意思维；第二份工作选择处在发展期的出海电商公司了解投放、商品、线上流量运营全流程。</p>
+                    <p>第三份工作期望继续在零售、电商领域选择一家大平台长期深耕发展。</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

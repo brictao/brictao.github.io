@@ -1,0 +1,158 @@
+html{
+    background: #f5f5f5;
+
+}
+h1{
+    color: #747474;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0px;
+
+    display: auto;
+}
+
+h2{
+    color: #292929;
+    font-size: 20px;
+    line-height: auto;
+    margin: 0px;
+}
+
+h3{
+    color: #292929;
+    font-size: 16px;
+    line-height: auto;
+    margin: 0px;
+}
+
+p, ul{
+    color: #747474;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0px;
+}
+.container{
+    width: 820px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+
+    background: #ffffff;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 0px;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 12px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-info li:not(:last-child)::after {
+    content: "\00a0\00a0\00a0\00a0|\00a0";
+    color: #747474;
+}
+
+.photo{
+    width: 149.49px;
+    height: 170px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 17px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px 18px 5px;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.experience-title{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 5px;
+}
+
+hr {
+    border: 1px solid #292929;
+    margin: 0px;
+}
+
+.experience-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+}
+
+.company{
+    color: #292929;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 3px 0px;
+}
+
+.job{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0px 3px 0px;
+}
+
+.desp{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.desp ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.desp li::before{
+    content: "•";
+    color: #888888;
+    font-weight: bold;
+    display: inline-block;
+    width: 15px;
+    margin-left: -20px;
+}
