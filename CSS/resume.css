@@ -7,9 +7,9 @@ html{
 body, h1, h2, p{
     margin: 0;
 }
-h1, h2, p{
+/* h1, h2, p{
     width: fit-content;
-}
+} */
 ul, li{
     max-width: 100%;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ ul, li{
     flex-direction: column;
     gap: 20px;
     background: #fff;
-    box-sizing: border-boxw;
+    box-sizing: border-box;
     border: red 1px solid;
 }
 .profile{
