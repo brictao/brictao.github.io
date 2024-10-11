@@ -1,174 +1,60 @@
-html{
-    background: #f5f5f5;
-    /* border: green 1px solid; */
-}
-
-body{
+body, html {
     margin: 0;
-    /* border: #292929 1px solid; */
+    padding: 0;
+    
+    overflow: hidden;  
 }
 
-h1{
-    color: #747474;
-    font-size: 30px;
-    line-height: 36px;
-    margin: 0px;
-
-    display: auto;
-}
-
-h2{
-    color: #292929;
-    font-size: 20px;
-    line-height: auto;
-    margin: 0px;
-}
-
-h3{
-    color: #292929;
-    font-size: 16px;
-    line-height: auto;
-    margin: 0px;
-}
-
-p, ul{
-    color: #747474;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 0px;
-    text-align: justify;
-}
-.container{
-    max-width: 820px;
-    width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-
+body {
+    background-color: #E1F3E4;
     display: flex;
-    flex-direction: column;
-    padding: 30px;
-    gap: 10px;
-
-    background: #ffffff;
-
-    /* border: red 1px solid; */
-}
-
-.profile{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 10px 10px 0px;
-}
-
-.bio{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    gap: 12px;
-}
-
-.contact-info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    /* padding: 10px 0px; */
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0px;
-
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.contact-info li:not(:last-child)::after {
-    content: "\00a0\00a0\00a0\00a0|\00a0";
-    color: #747474;
-}
-
-.photo{
-    max-width: 149.49px;
-    width: 100%;
-    /* height: 170px; */
-
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 17px;
-
-    box-sizing: border-box;
-}
-
-.photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-.experience{
-    display: flex;
     flex-direction: column;
-    padding: 0px 5px 18px 5px;
-    gap: 15px;
-    align-self: stretch;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    /* animation: smoothGradient 8s ease infinite; */
+}
+.nav {
+    position: relative; /* 定位基点为相对定位 */
+    padding: 10px; /* 添加一些内边距 */
 }
 
-.experience-title{
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    gap: 5px;
+.target-logo {
+    font-family: 'Shadows Into Light', cursive; /* 使用特殊字体 */
+    text-decoration: none; /* 去掉链接下划线 */
+    color: #333; /* 字体颜色 */
+    font-size: 24px; /* 字号 */
+    position: absolute; /* 绝对定位 */
+    left: 10px; /* 左侧位置 */
+    top: 10px; /* 顶部位置 */
 }
 
-hr {
-    border: 1px solid #292929;
-    margin: 0px;
+.target-hamburger {
+    position: absolute; /* 绝对定位 */
+    right: 10px; /* 位置在右侧 */
+    top: 10px; /* 顶部位置 */
+    cursor: pointer; /* 鼠标悬停时显示手形光标 */
+    display: flex; /* 使用弹性盒模型 */
+    flex-direction: column; /* 子项垂直排列 */
+    justify-content: space-around; /* 子项之间均匀间隔 */
 }
 
-.experience-detail{
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px 10px 0px;
+.hamburger .bun {
+    width: 100%; /* 线条宽度 */
+    height: 1.5px; /* 线条高度 */
+    background-color: #333; /* 线条颜色 */
+    margin: 2px 0; /* 线条之间的间隔 */
 }
 
-.company{
-    color: #292929;
-    height: fit-content;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px 3px 0px;
+h2 {
+    font-size: 36px;
+    margin: 15px;
+    color: #67C378;
 }
 
-.job{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 0px 3px 0px;
-}
-
-.desp{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.desp ul{
-    list-style: none;
-    padding-left: 20px;
-}
-
-.desp li::before{
-    content: "•";
-    color: #888888;
-    font-weight: bold;
-    display: inline-block;
-    width: 15px;
-    margin-left: -20px;
+p, a {
+    margin: 0;
+    color: #67C378;
 }
