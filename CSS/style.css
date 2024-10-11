@@ -1,51 +1,38 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    
-    overflow: hidden;  
-}
-
 body {
     background-color: #E1F3E4;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    margin: 0;
+    padding: 10px;
     text-align: center;
-    /* animation: smoothGradient 8s ease infinite; */
 }
 .nav {
-    position: relative; /* 定位基点为相对定位 */
-    padding: 10px; /* 添加一些内边距 */
+    width: 100%;
+    position: relative;
+    padding: 0, 0,1000px; 
+    display: flex;
 }
 
 .target-logo {
-    font-family: 'Shadows Into Light', cursive; /* 使用特殊字体 */
-    text-decoration: none; /* 去掉链接下划线 */
-    color: #333; /* 字体颜色 */
-    font-size: 24px; /* 字号 */
-    position: absolute; /* 绝对定位 */
-    left: 10px; /* 左侧位置 */
-    top: 10px; /* 顶部位置 */
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: none;
+    color: #67C378;
+    font-size: 48px;
 }
 
 .target-hamburger {
-    position: absolute; /* 绝对定位 */
-    right: 10px; /* 位置在右侧 */
-    top: 10px; /* 顶部位置 */
-    cursor: pointer; /* 鼠标悬停时显示手形光标 */
-    display: flex; /* 使用弹性盒模型 */
-    flex-direction: column; /* 子项垂直排列 */
-    justify-content: space-around; /* 子项之间均匀间隔 */
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
 }
-
 .hamburger .bun {
-    width: 100%; /* 线条宽度 */
-    height: 1.5px; /* 线条高度 */
-    background-color: #333; /* 线条颜色 */
-    margin: 2px 0; /* 线条之间的间隔 */
+    width: 100%;
+    height: 1.5px;
+    background-color: #67C378;
+    margin: 2px 0;
 }
 
 h2 {
