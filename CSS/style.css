@@ -1,47 +1,101 @@
 body {
     background-color: #E1F3E4;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     flex-direction: column;
-    padding: 10px;
-    text-align: center;
+    margin: 50px 0;
+    padding: 0 130px;
 }
+
 .nav {
     width: 100%;
-    position: relative;
-    padding: 0, 0,1000px; 
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.bio {
+    color: #67C378;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 260px);
+}
+
+a {
+    color: #67C378;
+}
+.nav a { 
+    text-decoration: none;
+}
 .target-logo {
     font-family: 'Shadows Into Light', cursive;
-    text-decoration: none;
-    color: #67C378;
     font-size: 48px;
 }
-
-.target-hamburger {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
+.hamburger {
+    list-style: none;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.hamburger .bun {
+.hamburger li {
+    background-color: #333333;
+    height: 2px;
     width: 100%;
-    height: 1.5px;
-    background-color: #67C378;
-    margin: 2px 0;
+    border-radius: 1px;
+    transition: transform 0.3s ease;
+    transform-origin: left center;
 }
 
 h2 {
-    font-size: 36px;
-    margin: 15px;
-    color: #67C378;
+    font-size: 40px;
+    margin: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+p {
+    margin: 1px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
-p, a {
-    margin: 0;
-    color: #67C378;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    width: 60%;
+    height: 100%;
+    background-color: #E1F3E4; /* 调整为更不透明 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 确保蒙层在最顶层 */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger.active li:nth-child(1) {
+    transform: rotate(30deg);
+}
+
+/* 第三条线旋转成叉号的下半部 */
+.hamburger.active li:nth-child(2) {
+    transform: rotate(-30deg);
 }
